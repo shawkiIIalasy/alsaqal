@@ -1,6 +1,6 @@
 <ul class="sidebar navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="/admin">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
@@ -29,15 +29,11 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">Our Company:</h6>
-          <a class="dropdown-item" href="login.html">flight</a>
-          <a class="dropdown-item" href="register.html">Bus</a>
-          <a class="dropdown-item" href="forgot-password.html">Hotels</a>
-          <a class="dropdown-item" href="forgot-password.html">Cars</a>
-          <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Action Company:</h6>
-          <a class="dropdown-item" href="404.html">Insert</a>
-          <a class="dropdown-item" href="blank.html">Edit</a>
-          <a class="dropdown-item" href="blank.html">Update</a>
+          <a class="dropdown-item" href="/admin/flightcompany">flight</a>
+          <a class="dropdown-item" href="/admin/buscompany">Bus</a>
+          <a class="dropdown-item" href="/admin/hotelscompany">Hotels</a>
+          <a class="dropdown-item" href="/admin/carscompany">Cars</a>
+         
         </div>
       </li>
       <li class="nav-item dropdown">

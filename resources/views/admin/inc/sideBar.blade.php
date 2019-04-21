@@ -12,14 +12,10 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
         <h6 class="dropdown-header">Our Pages:</h6>
-          <a class="dropdown-item" href="login.html">flight</a>
-          <a class="dropdown-item" href="register.html">Bus</a>
-          <a class="dropdown-item" href="forgot-password.html">Hotels</a>
-          <a class="dropdown-item" href="forgot-password.html">Cars</a>
-          <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Other Pages:</h6>
-          <a class="dropdown-item" href="404.html">404 Page</a>
-          <a class="dropdown-item" href="blank.html">Blank Page</a>
+          <a class="dropdown-item" href="reserveflight">flight</a>
+          <a class="dropdown-item" href="reservebus">Bus</a>
+          <a class="dropdown-item" href="reservehotels">Hotels</a>
+          <a class="dropdown-item" href="reservecars">Cars</a>
         </div>
       </li>
       <li class="nav-item dropdown">

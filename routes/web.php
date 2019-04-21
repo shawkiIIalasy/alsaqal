@@ -25,6 +25,7 @@ Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.log
 Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 Route::get('/', 'AdminController@index')->name('admin.dashboard');
 Route::resource('/flightcompany','Admin\FlightCompanyController');
+Route::resource('/reserveflight','Admin\ReserveFlightController');
 
 });
 

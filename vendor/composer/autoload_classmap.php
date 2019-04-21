@@ -9,6 +9,7 @@ return array(
     'App\\Admin' => $baseDir . '/app/Admin.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\FlightCompany' => $baseDir . '/app/FlightCompany.php',
     'App\\Http\\Controllers\\AdminController' => $baseDir . '/app/Http/Controllers/AdminController.php',
     'App\\Http\\Controllers\\Admin\\FlightCompanyController' => $baseDir . '/app/Http/Controllers/Admin/FlightCompanyController.php',
     'App\\Http\\Controllers\\Auth\\AdminLoginController' => $baseDir . '/app/Http/Controllers/Auth/AdminLoginController.blade.php',

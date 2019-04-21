@@ -351,6 +351,7 @@ class ComposerStaticInit00fe8f5a9681c994ce3125d67ab9738b
         'App\\Admin' => __DIR__ . '/../..' . '/app/Admin.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\FlightCompany' => __DIR__ . '/../..' . '/app/FlightCompany.php',
         'App\\Http\\Controllers\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminController.php',
         'App\\Http\\Controllers\\Admin\\FlightCompanyController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/FlightCompanyController.php',
         'App\\Http\\Controllers\\Auth\\AdminLoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AdminLoginController.blade.php',

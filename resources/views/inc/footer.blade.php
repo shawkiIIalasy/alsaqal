@@ -61,7 +61,7 @@
                                 <a href="#"><i class="icon-dribbble2"></i></a>
                                 <a href="#"><i class="icon-youtube"></i></a>
                             </p>
-                            <p>Copyright 2019 AlSaqal <a href="#">Module</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="" target="_blank">Prog>>Shawki alasy</a>
+                            <p>Copyright 2019 AlSaqal <a href="#">Module</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="" target="_blank">Alsaqal Team</a>
                         </div>
                     </div>
                 </div>

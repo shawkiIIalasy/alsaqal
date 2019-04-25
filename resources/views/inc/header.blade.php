@@ -16,10 +16,9 @@
                                     <li><a href="#">Cars</a></li>
                                 </ul>
                             </li>
-                            <li><a href="flight.html">about us</a></li>
+                            <li><a href="/about_us">About us</a></li>
                             
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="/contact_us">Contact us</a></li>
                             
                                 @if (Auth::guest())
                                 <li class="button-log">
@@ -46,7 +45,7 @@
 
                                     <ul class="dropdown-menu" role="menu">
                                         <li>
-                                            <a href="/user-profile"><i class="fa fa-user"></i>Profile</a>
+                                            <a href="/profile"><i class="fa fa-user"></i>Profile</a>
                                         </li>
                                         <li>
                                             <a href="#"><i class="fa fa-cog"></i>Setting</a>

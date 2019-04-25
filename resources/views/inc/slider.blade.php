@@ -1,6 +1,8 @@
  <div class="fh5co-hero">
-            <div class="fh5co-overlay"></div>
-            <div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
+            <div class="fh5co-overlay">                    @include('inc.banner')
+</div>
+            <div class="fh5co-cover" data-stellar-background-ratio="0.5" >
+                
                 <div class="desc">
                     <div class="container">
                         <div class="row">
@@ -282,18 +284,13 @@
 
                                 </div>
                             </div>
-                            <div class="desc2 animate-box">
-                                <div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
-                                    <p>AlSaqal  <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name"></a></p>
-                                    <h2>Exclusive Limited Time Offer</h2>
-                                    <h3>go form Amman to Irbid</h3>
-                                    <span class="price">22jd</span>
-                                    <!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
-                                </div>
-                            </div>
+    
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
 
         </div>

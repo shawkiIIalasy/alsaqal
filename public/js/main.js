@@ -30,7 +30,7 @@
 		});
 
 	};
-
+	
 	//Date Picker
 
    $('#date-start, #date-end').datepicker();

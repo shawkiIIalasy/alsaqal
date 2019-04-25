@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\ReserveFlight;
+
 class FlightCompany extends Model
 {
     protected $table = 'flightcompany';
@@ -14,6 +14,6 @@ class FlightCompany extends Model
     ];
      public function ReserveFlight()
     {
-        return $this->hasOne('App\ReserveFlight');
+        return $this->belongsTo('App\ReserveFlight');
     }
 }

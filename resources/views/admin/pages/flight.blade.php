@@ -115,7 +115,7 @@
 					<div class="card__info">
 					<span class="card__category"></span>
 					<h3 class="card__title">{{$f->from}} To {{$f->to}}</h3>
-					<span class="card__by">by <a href="#" class="card__author" title="author">{{$f}}</a></span>
+					<span class="card__by">by <a href="#" class="card__author" title="author">{{}}</a></span>
 					</div>
 					</article>
 

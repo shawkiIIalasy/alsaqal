@@ -14,6 +14,12 @@
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/about_us', function () {
+    return view('about_us');
+});
+Route::get('/contact_us', function () {
+    return view('contact_us');
+});
 Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
@@ -30,3 +36,4 @@ Route::resource('/reserveflight','Admin\ReserveFlightController');
 });
 
 Route::resource('/flight','flightController');
+Route::resource('/profile','ProfileController');

@@ -1963,6 +1963,7 @@ pre code {
   margin-right: auto;
   margin-left: auto;
   margin-top:50px;
+  margin-bottom: 50px;
   padding:20px 100px 20px 100px;
 }
 .container-md:before, .container-md:after {

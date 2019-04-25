@@ -8,11 +8,11 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
+          <span>Journey</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
         <h6 class="dropdown-header">Our Pages:</h6>
-          <a class="dropdown-item" href="reserveflight">flight</a>
+          <a class="dropdown-item" href="/admin/reserveflight">flight</a>
           <a class="dropdown-item" href="reservebus">Bus</a>
           <a class="dropdown-item" href="reservehotels">Hotels</a>
           <a class="dropdown-item" href="reservecars">Cars</a>

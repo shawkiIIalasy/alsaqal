@@ -51,10 +51,12 @@
         <div id="fh5co-wrapper">
         <div id="fh5co-page">
        @include('inc.header')
+
        @yield('content')
 
+
         
-        
+        @include('inc.footer')
 
 
     <script src="js/jquery.min.js"></script>

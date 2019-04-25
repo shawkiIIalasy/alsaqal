@@ -3,12 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\FlightCompany;
+
 class ReserveFlight extends Model
 {
      protected $table = 'reserveflight';
     // Primary Key
     public $primaryKey = 'id';
+    public $timestamps = true;
     public $fillable = [
         'id', 'from','image1','image2','image3','image4','price','flightcompany_id'
     ];
@@ -16,7 +17,7 @@ class ReserveFlight extends Model
     
     public function FlightCompany()
     {
-        return $this->belongsTo('App\FlightCompany','id','flightcompany_id');
+        return $this->hasMany('App\FlightCompany','flightcompany_id');
     }
 
 

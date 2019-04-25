@@ -28,6 +28,12 @@ class CreateAdminsTable extends Migration
                 'email' => 'shawki.alasy5@gmail.com',
                 'password'=>Hash::make('Shawki98'),
             ));
+         DB::table('admins')->insert(
+            array(
+                'name'=>'hamza',
+                'email' => 'hamza.mashriqi999@gmail.com',
+                'password'=>Hash::make('12345678'),
+            ));
     }
 
     /**

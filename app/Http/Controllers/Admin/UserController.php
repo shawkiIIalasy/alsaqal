@@ -4,14 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\FlightCompany;
-use Auth;
-class FlightCompanyController extends Controller
+
+class UserController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth:admin');
-    }
     /**
      * Display a listing of the resource.
      *
@@ -19,9 +14,7 @@ class FlightCompanyController extends Controller
      */
     public function index()
     {
-        $flight=FlightCompany::paginate(8);
-
-        return view('admin.company.flight')->with('flight',$flight);
+        //
     }
 
     /**
@@ -42,28 +35,7 @@ class FlightCompanyController extends Controller
      */
     public function store(Request $request)
     {
-        if($request->hasFile('image')){
-            // Get filename with the extension
-            $filenameWithExt = $request->file('image')->getClientOriginalName();
-            // Get just filename
-            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-            // Get just ext
-            $extension = $request->file('image')->getClientOriginalExtension();
-            // Filename to store
-            $fileNameToStore= $filename.'_'.time().'.'.$extension;
-            // Upload Image
-            $path = $request->file('image')->storeAs('/public/images', $fileNameToStore);
-        }else
-        {
-            $fileNameToStore="";
-        }
-        $flight=new FlightCompany();
-        $flight->name=request('name');
-        $flight->image=$fileNameToStore;
-        $flight->admin_id=Auth::user()->id;
-        $flight->save();
-        return redirect('/flightcompany');
-
+        //
     }
 
     /**
@@ -108,9 +80,6 @@ class FlightCompanyController extends Controller
      */
     public function destroy($id)
     {
-        $flightcompany=FlightCompany::find($id);
-        $flightcompany->destroy($id);
-
-        return redirect('/flightcompany');
+        //
     }
 }

@@ -36,4 +36,20 @@ class Admin extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+      public function FlightCompany()
+    {
+        return $this->hasMany('App\FlightCompany');
+    }
+     public function ReserveFlight()
+    {
+        return $this->hasMany('App\ReserveFlight');
+    }
+     public function HotelCompany()
+    {
+        return $this->hasMany('App\HotelCompany');
+    }
+     public function ReserveHotel()
+    {
+        return $this->hasMany('App\ReserveHotel');
+    }
 }

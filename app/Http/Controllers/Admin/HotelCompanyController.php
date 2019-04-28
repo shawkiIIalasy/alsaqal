@@ -4,11 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\FlightCompany;
+use App\HotelCompany;
+use App\ReserveHotel;
 use Auth;
-class FlightCompanyController extends Controller
+class HotelCompanyController extends Controller
 {
-    public function __construct()
+      public function __construct()
     {
         $this->middleware('auth:admin');
     }
@@ -19,9 +20,10 @@ class FlightCompanyController extends Controller
      */
     public function index()
     {
-        $flight=FlightCompany::paginate(8);
+        
+        $hotel=HotelCompany::paginate(8);
 
-        return view('admin.company.flight')->with('flight',$flight);
+        return view('admin.company.hotel')->with('hotel',$hotel);
     }
 
     /**
@@ -42,6 +44,7 @@ class FlightCompanyController extends Controller
      */
     public function store(Request $request)
     {
+        
         if($request->hasFile('image')){
             // Get filename with the extension
             $filenameWithExt = $request->file('image')->getClientOriginalName();
@@ -57,13 +60,15 @@ class FlightCompanyController extends Controller
         {
             $fileNameToStore="";
         }
-        $flight=new FlightCompany();
-        $flight->name=request('name');
-        $flight->image=$fileNameToStore;
-        $flight->admin_id=Auth::user()->id;
-        $flight->save();
-        return redirect('/flightcompany');
-
+        $hotel=new HotelCompany();
+        $hotel->name=request('name');
+        $hotel->country=request('country');
+        $hotel->city=request('city');
+        $hotel->stars=request('stars');
+        $hotel->image=$fileNameToStore;
+        $hotel->admin_id=Auth::user()->id;
+        $hotel->save();
+        return redirect('/hotelcompany');
     }
 
     /**
@@ -108,9 +113,9 @@ class FlightCompanyController extends Controller
      */
     public function destroy($id)
     {
-        $flightcompany=FlightCompany::find($id);
-        $flightcompany->destroy($id);
+        $hotelcompany=HotelCompany::find($id);
+        $hotelcompany->destroy($id);
 
-        return redirect('/flightcompany');
+        return redirect('/hotelcompany');
     }
 }

@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\ReserveFlight;
+use App\ReserveHotel;
 use App\UserInfo;
 use App\User;
 use Auth;
-use App\FlightReservation;
-class flightController extends Controller
+use App\HotelReservation;
+class HotelController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +17,8 @@ class flightController extends Controller
      */
     public function index()
     {
-        $ReserveFlight=ReserveFlight::all();
-        return view('pages.flight')->with('ReserveFlight',$ReserveFlight);
+        $ReserveHotel=ReserveHotel::all();
+        return view('hotel.index')->with('ReserveHotel',$ReserveHotel);
     }
 
     /**
@@ -39,39 +39,32 @@ class flightController extends Controller
      */
     public function store(Request $request)
     {
+       
         if(Auth::guest())
         {
             return redirect('/login');
         }else
         {
            $user = User::find(Auth::user()->id)->user_info;
-           $user1 = User::find(Auth::user()->id)->flightreservation;
+           $user1 = User::find(Auth::user()->id)->hotelreservation;
             if(isset($user))
             {
-                
-                if($user1->reserveflight_id==request('id'))
+
+                if(isset($user1))
                 {
                     return redirect()->back()->with('danger', 'You Already Reserve This Trip');   
                 }else
                 {
-                $reserve=new FlightReservation();
+                $reserve=new HotelReservation();
                 $reserve->user_id=Auth::User()->id;
-                $reserve->reserveflight_id=request('id');
-                $reserve->class=request('class');
-                $reserve->adult=request('adult');
-                $reserve->children=request('children');
+                $reserve->reservehotel_id=request('id');
                 $reserve->save();
-                $flight=ReserveFlight::find(request('id'));
-                $flight->adult=$flight->adult-$reserve->adult;
-                $flight->children=$flight->children-$reserve->children;
-                $flight->save();
                 return redirect('/profile');
             }}else
             {
                 return view('visa.confirm');
             }
         }
-        
     }
 
     /**
@@ -82,8 +75,8 @@ class flightController extends Controller
      */
     public function show($id)
     {
-        $flight=ReserveFlight::find($id);
-        return view('pages.show')->with('flight',$flight);
+        $hotel=ReserveHotel::find($id);
+        return view('hotel.show')->with('hotel',$hotel);
     }
 
     /**

@@ -11,7 +11,7 @@
           <li class="breadcrumb-item">
             <a href="#">Pages</a>
           </li>
-          <li class="breadcrumb-item active">Flight</li>
+          <li class="breadcrumb-item active">Hotels</li>
           <button type="button"  class="fa fa-plus float-right" data-toggle="modal" data-target="#exampleModal"><span ></span></button>
         </ol>
 <!-- Modal -->
@@ -25,19 +25,10 @@
 		        </button>
 		      </div>
 		      <div class="modal-body">
-		         <form method="post" action="/reserveflight" enctype="multipart/form-data">
+		         <form method="post" action="/reservehotel" enctype="multipart/form-data">
 		        	@csrf
 		        	@method('POST')
-		        	<div class="row">
-    					<div class="col">
-			        		<label>From :</label>
-			        		<input type="text" name="from" class="form-control">
-			        	</div>
-			        	<div class="col">
-			        		<label>To :</label>
-			        		<input type="text" name="to" class="form-control">
-			        	</div>
-		        	</div>
+		        
 		        	<div class="row">
 		        		<div class="col">
 		        			<label>Price :</label>
@@ -54,44 +45,28 @@
 			        		<input type="date" name="check_out"  class="form-control">
 			        	</div>
 			        </div>
-			        <div class="row">
-			        	<div class="col">
-			        		<label>Class :</label>
-			        		 <select class="form-control" name="class[]" multiple>
-							  <option value="1">Economy</option>
-							  <option value="2">First</option>
-							  <option value="3">Business</option>
-							</select> 
-			        	</div>
-			        	
-			        </div>
+			     
 		        	<div class="row">
 		        		<div class="col">
 		        			<label>Adult Number :</label>
 		        			<input type="number" name="adult" placeholder="1 or more" class="form-control">
 		        		</div>
-		        	</div>
-		        	<div class="row">
+		        	
 		        		<div class="col">
 		        			<label>children Number :</label>
 		        			<input type="number" name="children" placeholder="0 or more" class="form-control">
 		        		</div>
-		        	</div>
-		        	<div class="row">
-    					<div class="col">
-			        		<label>Airpot Name From :</label>
-			        		<input type="text" name="airpot_from" class="form-control">
-			        	</div>
-			        	<div class="col">
-			        		<label>Airpot Name To :</label>
-			        		<input type="text" name="airpot_to" class="form-control">
-			        	</div>
+		        
+		        		<div class="col">
+		        			<label>Rooms Number :</label>
+		        			<input type="number" name="rooms" placeholder="0 or more" class="form-control">
+		        		</div>
 		        	</div>
 		        	<div class="form-group">
-					  	<label>Flight Company:</label>
+					  	<label>Hotel Company:</label>
 					  	<select class="form-control" name="company_id">
-					  		@if(isset($FlightCompany))
-					  			@foreach($FlightCompany as $t)
+					  		@if(isset($HotelCompany))
+					  			@foreach($HotelCompany as $t)
 					  				<option value="{{$t->id}}">{{$t->name}}</option>
 					  			@endforeach
 					  		@endif
@@ -139,9 +114,9 @@
 		    </div>
 		  </div>
 		</div>
-		@if(isset($ReserveFlight))
+		@if(isset($ReserveHotel))
 		<section class="cards-l">
-			@foreach($ReserveFlight as $f)
+			@foreach($ReserveHotel as $f)
 					
 					<article class="card-l card--1">
 						
@@ -162,13 +137,14 @@
 					</a>
 					<div class="card__info">
 					<span class="card__category"></span>
-					<h3 class="card__title">{{$f->from}} To {{$f->to}}</h3>
-					<span class="card__by">by Compamy <a href="/flightcompany" class="card__author" title="author">{{$f->flightcompany->name}}</a></span>
-					by Admin <a href="/flightcompany" class="card__author" title="author">{{$f->admin->name}}</a>
-
-					<div><a href="/reserveflight/{{$f->id}}" class="btn btn-primary" title="author">show</a>
+					<h3 class="card__title">{{$f->hotelcompany->name}}</h3>
+					<h5 class="card__title">{{$f->hotelcompany->stars}}stars</h5>
+					<span class="card__by">by Admin <a href="/flightcompany" class="card__author" title="author">{{$f->admin->name}}</a></span>
 					
-					<div><form  method="POST" action="/reserveflight/{{$f->id}}">
+
+					<div><a href="/reservehotel/{{$f->id}}" class="btn btn-primary" title="author">show</a>
+					
+					<div><form  method="POST" action="/reservehotel/{{$f->id}}">
 			    {{ csrf_field() }}
 			    {{ method_field('DELETE') }}
 

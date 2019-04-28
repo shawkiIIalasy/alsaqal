@@ -12,7 +12,7 @@
           <li class="breadcrumb-item">
             <a href="#">Company</a>
           </li>
-          <li class="breadcrumb-item active">Flight</li>
+          <li class="breadcrumb-item active">Hotels</li>
           <button type="button"  class="fa fa-plus float-right" data-toggle="modal" data-target="#exampleModal"><span ></span></button>
         </ol>
 
@@ -28,13 +28,26 @@
 		        </button>
 		      </div>
 		      <div class="modal-body">
-		        <form method="post" action="/flightcompany" enctype="multipart/form-data">
+		        <form method="post" action="/hotelcompany" enctype="multipart/form-data">
 		        	@csrf
 		        	@method('POST')
 		        	<div class="form-group">
 		        		<label>Company Name:</label>
 		        		<input type="text" name="name" class="form-control">
 		        	</div>
+		        	<div class="form-group">
+		        		<label>Stars:</label>
+		        		<input type="number" name="stars" class="form-control">
+		        	</div>
+		        	<div class="form-group">
+		        		<label>Country:</label>
+		        		<input type="text" name="country" class="form-control">
+		        	</div>
+		        	<div class="form-group">
+		        		<label>City:</label>
+		        		<input type="text" name="city" class="form-control">
+		        	</div>
+
 		        	<div class="file-field form-group">
 					    <div class="btn btn-primary btn-sm float-left form-control">
 					      <span>Choose Logo</span>
@@ -54,10 +67,10 @@
 		  </div>
 		</div>
 
-		@if(isset($flight))
+		@if(isset($hotel))
 <div class="c">
 
-			@foreach($flight as $f)			
+			@foreach($hotel as $f)			
   <div class="column">
     <!-- Post-->
     <div class="post-module">
@@ -79,10 +92,10 @@
       </div>
       <!-- Post Content-->
       <div class="post-content">
-        <div class="category">{{$f->id}}</div>
+        <div class="category">{{$f->stars}}</div>
         <h1 class="title">{{$f->name}}</h1>
-        <h2 class="sub_title">The city that never sleeps.</h2>
-        <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+        <h2 class="sub_title">{{$f->city}},{{$f->country}}</h2>
+       
         <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i>{{$f->created_at->diffForHumans()}}</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> {{$f->admin->name}}</a></span></div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-<a class="navbar-brand mr-1" href="index.html">AlSaqal DashBorad</a>
+<a class="navbar-brand mr-1" href="/admin">AlSaqal DashBorad</a>
 
 <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
   <i class="fas fa-bars"></i>
@@ -23,7 +23,7 @@
   <li class="nav-item dropdown no-arrow mx-1">
     <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-bell fa-fw"></i>
-      <span class="badge badge-danger">9+</span>
+      
     </a>
     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
       <a class="dropdown-item" href="#">Action</a>
@@ -35,7 +35,7 @@
   <li class="nav-item dropdown no-arrow mx-1">
     <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-envelope fa-fw"></i>
-      <span class="badge badge-danger">7</span>
+      
     </a>
     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
       <a class="dropdown-item" href="#">Action</a>
@@ -46,9 +46,12 @@
   </li>
   <li class="nav-item dropdown no-arrow">
     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
       <i class="fas fa-user-circle fa-fw"></i>
+      {{Auth::user()->name}}
     </a>
     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+
       <a class="dropdown-item" href="#">Settings</a>
       <a class="dropdown-item" href="#">Activity Log</a>
       <div class="dropdown-divider"></div>

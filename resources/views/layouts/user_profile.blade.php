@@ -26,24 +26,24 @@
 				<div class="profile-usermenu">
 					<ul class="nav">
 						<li class="active">
-							<a href="#">
+							<a href="/profile">
 							<i class="glyphicon glyphicon-home"></i>
 							<span class="hidden-xs">Personal<span> </a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="/upcomingflight">
 							<i class="glyphicon glyphicon-user"></i>
-							<span class="hidden-xs">Delivery Address<span> </a>
+							<span class="hidden-xs">Flight Reservation UpComing<span> </a>
 						</li>
 						<li>
 							<a href="#">
 							<i class="glyphicon glyphicon-ok"></i>
-							<span class="hidden-xs">Orders <span></a>
+							<span class="hidden-xs">Trips<span></a>
 						</li>
 						<li>
 							<a href="#">
 							<i class="glyphicon glyphicon-flag"></i>
-							<span class="hidden-xs">My Wishlist <span></a>
+							<span class="hidden-xs">My feedBack<span></a>
 						</li>
                             <li>
 							<a href="#">

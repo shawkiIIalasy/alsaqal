@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Flightcompany extends Migration
+class Contact extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class Flightcompany extends Migration
      */
     public function up()
     {
-         Schema::create('flightcompany', function (Blueprint $table) {
+         Schema::create('contact', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('image');
-            $table->integer('admin_id');
+            $table->string('country');
+            $table->string('email');
+            $table->string('comment');
+            $table->integer('ok');
             $table->timestamps();
         });
     }
@@ -29,7 +31,6 @@ class Flightcompany extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('flightcompany');
-
+       Schema::dropIfExists('contact');
     }
 }

@@ -4,14 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\FlightCompany;
-use Auth;
-class FlightCompanyController extends Controller
+use App\Contact;
+class ContactController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth:admin');
-    }
     /**
      * Display a listing of the resource.
      *
@@ -19,9 +14,8 @@ class FlightCompanyController extends Controller
      */
     public function index()
     {
-        $flight=FlightCompany::paginate(8);
-
-        return view('admin.company.flight')->with('flight',$flight);
+        $contact=Contact::paginate(10);
+        return view('admin.contact.index')->with('contact',$contact);
     }
 
     /**
@@ -42,28 +36,14 @@ class FlightCompanyController extends Controller
      */
     public function store(Request $request)
     {
-        if($request->hasFile('image')){
-            // Get filename with the extension
-            $filenameWithExt = $request->file('image')->getClientOriginalName();
-            // Get just filename
-            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-            // Get just ext
-            $extension = $request->file('image')->getClientOriginalExtension();
-            // Filename to store
-            $fileNameToStore= $filename.'_'.time().'.'.$extension;
-            // Upload Image
-            $path = $request->file('image')->storeAs('/public/images', $fileNameToStore);
-        }else
-        {
-            $fileNameToStore="";
-        }
-        $flight=new FlightCompany();
-        $flight->name=request('name');
-        $flight->image=$fileNameToStore;
-        $flight->admin_id=Auth::user()->id;
-        $flight->save();
-        return redirect('/flightcompany');
-
+       $contact=new Contact();
+       $contact->name=request('fname').request('lname');
+       $contact->email=request('email');
+       $contact->comment=request('comment');
+       $contact->country=request('country');
+       $contact->ok=0;
+       $contact->save();
+       return redirect('/contact_us')->with('ok', 'You Comment Submitted Sucssfuly');
     }
 
     /**
@@ -97,7 +77,10 @@ class FlightCompanyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $contact=Contact::find($id);
+       $contact->ok=1;
+       $contact->save();
+       return redirect('/contact');
     }
 
     /**
@@ -108,9 +91,9 @@ class FlightCompanyController extends Controller
      */
     public function destroy($id)
     {
-        $flightcompany=FlightCompany::find($id);
-        $flightcompany->destroy($id);
+        $contact=Contact::find($id);
+        $contact->destroy($id);
 
-        return redirect('/flightcompany');
+        return redirect('/contact');
     }
 }

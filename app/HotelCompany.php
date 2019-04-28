@@ -4,17 +4,17 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class FlightCompany extends Model
+class HotelCompany extends Model
 {
-    protected $table = 'flightcompany';
+    protected $table = 'hotelcompany';
     // Primary Key
     public $primaryKey = 'id';
     public $fillable = [
         'id', 'name','image','admin_id'
     ];
-    public function ReserveFlight()
+    public function ReserveHotel()
     {
-        return $this->hasMany('App\ReserveFlight');
+        return $this->hasMany('App\ReserveHotel');
     }
 
     

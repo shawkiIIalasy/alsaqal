@@ -8,14 +8,14 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Journey</span>
+          <span>Trips</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
         <h6 class="dropdown-header">Our Pages:</h6>
-          <a class="dropdown-item" href="/admin/reserveflight">flight</a>
-          <a class="dropdown-item" href="reservebus">Bus</a>
-          <a class="dropdown-item" href="reservehotels">Hotels</a>
-          <a class="dropdown-item" href="reservecars">Cars</a>
+          <a class="dropdown-item" href="/reserveflight">flight</a>
+          <a class="dropdown-item" href="/reservebus">Bus</a>
+          <a class="dropdown-item" href="/reservehotel">Hotels</a>
+          <a class="dropdown-item" href="/reservecars">Cars</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -25,10 +25,10 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">Our Company:</h6>
-          <a class="dropdown-item" href="/admin/flightcompany">flight</a>
-          <a class="dropdown-item" href="/admin/buscompany">Bus</a>
-          <a class="dropdown-item" href="/admin/hotelscompany">Hotels</a>
-          <a class="dropdown-item" href="/admin/carscompany">Cars</a>
+          <a class="dropdown-item" href="/flightcompany">flight</a>
+          <a class="dropdown-item" href="/buscompany">Bus</a>
+          <a class="dropdown-item" href="/hotelcompany">Hotels</a>
+          <a class="dropdown-item" href="/carscompany">Cars</a>
          
         </div>
       </li>
@@ -49,6 +49,11 @@
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Users</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/contact">
+          <i class="fas fa-fw fa-envelope"></i>
+          <span>Mail</span></a>
       </li>
     </ul>

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Flightcompany extends Migration
+class Hotelcompany extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class Flightcompany extends Migration
      */
     public function up()
     {
-         Schema::create('flightcompany', function (Blueprint $table) {
+        Schema::create('hotelcompany', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('image');
+            $table->string('country');
+            $table->string('city');
+            $table->integer('stars');
             $table->integer('admin_id');
             $table->timestamps();
         });
@@ -29,7 +32,6 @@ class Flightcompany extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('flightcompany');
-
+        Schema::dropIfExists('hotelcompany');
     }
 }

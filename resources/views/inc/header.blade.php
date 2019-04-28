@@ -11,7 +11,7 @@
                                 <a href="#" class="fh5co-sub-ddown">Rresveration</a>
                                 <ul class="fh5co-sub-menu">
                                     <li><a href="/flight">flights</a></li>
-                                    <li><a href="#">Hotels</a></li>
+                                    <li><a href="/hotel">Hotels</a></li>
                                     <li><a href="#">Bus</a></li>
                                     <li><a href="#">Cars</a></li>
                                 </ul>

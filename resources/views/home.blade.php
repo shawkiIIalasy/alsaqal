@@ -6,37 +6,65 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-                        <h3>Hot Tours</h3>
-                        <p>Far far away, Far far awayFar far awayFar far awayFar far awayFar far awayFar far awayFar far away.</p>
+                        <h3>Top</h3>
                     </div>
                 </div>
                 <div class="row">
+                    @if(isset($flighttop))
                     <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+                        <div href="#"><img src="/storage/images/{{$flighttop->image1}}" alt="" class="img-responsive">
+                            <div class="desc">
+                                <span style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-100px; ">Flight</span>
+                                <h3>{{$flighttop->from}} To {{$flighttop->to}}</h3>
+                                <span class="price">{{$flighttop->price}}JD</span>
+                                 <span >{{$flighttop->created_at->diffForHumans()}}</span>
+                                <a class="btn btn-primary btn-outline" href="#">Reserve Now <i class="icon-arrow-right22"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    @else
+                        <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
                         <div href="#"><img src="images/place-1.jpg" alt="" class="img-responsive">
                             <div class="desc">
-                                <span></span>
+                                <span style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-100px; ">Flight</span>
                                 <h3>New York</h3>
-                                <span>3 nights + Flight 5*Hotel</span>
                                 <span class="price">$1,000</span>
-                                <a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+                                <a class="btn btn-primary btn-outline" href="#">Reserve Now <i class="icon-arrow-right22"></i></a>
                             </div>
                         </div>
                     </div>
+                    @endif
+                       @if(isset($hoteltop))
                     <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-                        <div href="#"><img src="images/place-2.jpg" alt="" class="img-responsive">
+                        <div href="#"><img src="/storage/images/{{$hoteltop->image1}}" alt="" class="img-responsive">
                             <div class="desc">
-                                <span></span>
-                                <h3>Philippines</h3>
-                                <span>4 nights + Flight 5*Hotel</span>
-                                <span class="price">$1,000</span>
-                                <a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+                                <span style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-100px; ">Hotels</span>
+                                <h3>{{$hoteltop->hotelcompany->name}}</h3>
+                                <span class="price">{{$hoteltop->price}}JD</span>
+                                 <span >
+                                    {{$hoteltop->hotelcompany->city}},{{$hoteltop->hotelcompany->country}}
+                                   
+                                    {{$hoteltop->created_at->diffForHumans()}}</span>
+                                <a class="btn btn-primary btn-outline" href="#">Reserve Now <i class="icon-arrow-right22"></i></a>
                             </div>
                         </div>
                     </div>
+                    @else
+                        <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+                        <div href="#"><img src="images/place-1.jpg" alt="" class="img-responsive">
+                            <div class="desc">
+                                <span style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-100px; ">Flight</span>
+                                <h3>New York</h3>
+                                <span class="price">$1,000</span>
+                                <a class="btn btn-primary btn-outline" href="#">Reserve Now <i class="icon-arrow-right22"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
                     <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
                         <div href="#"><img src="images/place-3.jpg" alt="" class="img-responsive">
                             <div class="desc">
-                                <span></span>
+                                <span style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-100px; ">Car</span>
                                 <h3>Hongkong</h3>
                                 <span>2 nights + Flight 4*Hotel</span>
                                 <span class="price">$1,000</span>
@@ -230,69 +258,7 @@
             </div>
         </div>
 
-        <div id="fh5co-blog-section" class="fh5co-section-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-                        <h3>Recent From Blog</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row row-bottom-padded-md">
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="fh5co-blog animate-box">
-                            <a href="#"><img class="img-responsive" src="images/place-1.jpg" alt=""></a>
-                            <div class="blog-text">
-                                <div class="prod-title">
-                                    <h3><a href="#">30% Discount to Travel All Around the World</a></h3>
-                                    <span class="posted_by">Sep. 15th</span>
-                                    <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p><a href="#">Learn More...</a></p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="fh5co-blog animate-box">
-                            <a href="#"><img class="img-responsive" src="images/place-2.jpg" alt=""></a>
-                            <div class="blog-text">
-                                <div class="prod-title">
-                                    <h3><a href="#">Planning for Vacation</a></h3>
-                                    <span class="posted_by">Sep. 15th</span>
-                                    <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p><a href="#">Learn More...</a></p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="clearfix visible-sm-block"></div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="fh5co-blog animate-box">
-                            <a href="#"><img class="img-responsive" src="images/place-3.jpg" alt=""></a>
-                            <div class="blog-text">
-                                <div class="prod-title">
-                                    <h3><a href="#">Visit Tokyo Japan</a></h3>
-                                    <span class="posted_by">Sep. 15th</span>
-                                    <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p><a href="#">Learn More...</a></p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="clearfix visible-md-block"></div>
-                </div>
-
-                <div class="col-md-12 text-center animate-box">
-                    <p><a class="btn btn-primary btn-outline btn-lg" href="#">See All Post <i class="icon-arrow-right22"></i></a></p>
-                </div>
-
-            </div>
-        </div>
+      
         <!-- fh5co-blog-section -->
         <div id="fh5co-testimonial" style="background-image:url(images/img_bg_1.jpg);">
         <div class="container">
@@ -302,37 +268,34 @@
                 </div>
             </div>
             <div class="row">
+                @if(!isset($contact))
+                    <div class="col-md-4">
+                    <div class="box-testimony animate-box">
+                        <blockquote>
+                            <span class="quote"><span><i class="icon-quotes-right"></i></span></span>
+                            <p>Not Found Any Message</p>
+                        </blockquote>
+                      
+                    </div>
+                    
+                </div>
+                @else
+                    <?php $i=0;?>
+                    @foreach($contact as $c)
                 <div class="col-md-4">
                     <div class="box-testimony animate-box">
                         <blockquote>
                             <span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            <p style="white-space: pre-wrap;  ">{{$c->comment}}</p>
                         </blockquote>
-                        <p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+                        <p class="author">{{$c->name}}<a href="http://freehtml5.co/" target="_blank"></a> <span class="subtext">{{$c->country}}</span></p>
                     </div>
                     
                 </div>
-                <div class="col-md-4">
-                    <div class="box-testimony animate-box">
-                        <blockquote>
-                            <span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
-                        </blockquote>
-                        <p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
-                    </div>
-                    
-                    
-                </div>
-                <div class="col-md-4">
-                    <div class="box-testimony animate-box">
-                        <blockquote>
-                            <span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-                        </blockquote>
-                        <p class="author">John Doe, Founder <a href="#">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
-                    </div>
-                    
-                </div>
+                <?php $i++;
+                    if($i==3)break;?>
+                    @endforeach
+               @endif
             </div>
         </div>
     </div>

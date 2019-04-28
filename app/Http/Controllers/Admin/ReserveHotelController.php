@@ -4,12 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\FlightCompany;
-use App\ReserveFlight;
+use App\HotelCompany;
+use App\ReserveHotel;
 use Auth;
-class ReserveFlightController extends Controller
+class ReserveHotelController extends Controller
 {
-     public function __construct()
+    public function __construct()
     {
         $this->middleware('auth:admin');
     }
@@ -20,9 +20,9 @@ class ReserveFlightController extends Controller
      */
     public function index()
     {
-        $FlightCompany=FlightCompany::all();
-        $ReserveFlight=ReserveFlight::paginate(8);
-        return view('admin.pages.flight')->with('FlightCompany',$FlightCompany)->with('ReserveFlight',$ReserveFlight);
+        $HotelCompany=HotelCompany::all();
+        $ReserveHotel=ReserveHotel::paginate(8);
+        return view('admin.pages.hotel')->with('HotelCompany',$HotelCompany)->with('ReserveHotel',$ReserveHotel);
     }
 
     /**
@@ -104,28 +104,22 @@ class ReserveFlightController extends Controller
             $fileNameToStore4=null;
         }
 
-        $flight=new ReserveFlight();
-        $flight->from=request('from');
-        $flight->to=request('to');
+        $flight=new ReserveHotel();
         $flight->price=request('price');
-        $flight->flightcompany_id=request('company_id');
+        $flight->hotelcompany_id=request('company_id');
         $flight->image1=$fileNameToStore1;
         $flight->image2=$fileNameToStore2;
         $flight->image3=$fileNameToStore3;
         $flight->image4=$fileNameToStore4;
         $flight->check_in=request('check_in');
         $flight->check_out=request('check_out');
-        $string=implode(',',request('class'));
-        $flight->class=$string;
         $flight->adult=request('adult');
         $flight->admin_id=Auth::user()->id;
         $flight->children=request('children');
-        $flight->airpot_from=request('airpot_from');
-        $flight->airpot_to=request('airpot_to');
+        $flight->rooms=request('rooms');
 
         $flight->save();
-        return redirect('/reserveflight');
-
+        return redirect('/reservehotel');
     }
 
     /**
@@ -136,11 +130,12 @@ class ReserveFlightController extends Controller
      */
     public function show($id)
     {
-        $FlightCompany=FlightCompany::all();
-        $flight=ReserveFlight::find($id);
+        
+        $HotelCompany=HotelCompany::all();
+        $hotel=ReserveHotel::find($id);
            
                                 
-        return view('admin.pages.item')->with('flight',$flight)->with('FlightCompany',$FlightCompany);
+        return view('admin.pages.item1')->with('hotel',$hotel)->with('HotelCompany',$HotelCompany);
     }
 
     /**
@@ -151,7 +146,7 @@ class ReserveFlightController extends Controller
      */
     public function edit($id)
     {
-        
+        //
     }
 
     /**
@@ -163,7 +158,7 @@ class ReserveFlightController extends Controller
      */
     public function update(Request $request, $id)
     {
-         if($request->hasFile('image1')){
+        if($request->hasFile('image1')){
             // Get filename with the extension
             $filenameWithExt = $request->file('image1')->getClientOriginalName();
             // Get just filename
@@ -225,26 +220,22 @@ class ReserveFlightController extends Controller
         }
 
         $flight=ReserveFlight::find($id);
-        $flight->from=request('from');
-        $flight->to=request('to');
         $flight->price=request('price');
-        $flight->flightcompany_id=request('company_id');
+        $flight->hotelcompany_id=request('company_id');
         $flight->image1=$fileNameToStore1;
         $flight->image2=$fileNameToStore2;
         $flight->image3=$fileNameToStore3;
         $flight->image4=$fileNameToStore4;
         $flight->check_in=request('check_in');
         $flight->check_out=request('check_out');
-        $string=implode(',',request('class'));
-        $flight->class=$string;
         $flight->adult=request('adult');
         $flight->admin_id=Auth::user()->id;
         $flight->children=request('children');
-        $flight->airpot_from=request('airpot_from');
-        $flight->airpot_to=request('airpot_to');
+        $flight->rooms=request('rooms');
+
 
         $flight->save();
-        return redirect('/reserveflight');
+        return redirect('/reservehotel');
     }
 
     /**
@@ -255,9 +246,9 @@ class ReserveFlightController extends Controller
      */
     public function destroy($id)
     {
-        $reserveflight=ReserveFlight::find($id);
-        $reserveflight->destroy($id);
+        $reservehotel=ReserveHotel::find($id);
+        $reservehotel->destroy($id);
        
-        return redirect('/reserveflight');
+        return redirect('/reservehotel');
     }
 }

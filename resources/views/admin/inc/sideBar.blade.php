@@ -15,7 +15,7 @@
           <a class="dropdown-item" href="/reserveflight">flight</a>
           <a class="dropdown-item" href="/reservebus">Bus</a>
           <a class="dropdown-item" href="/reservehotel">Hotels</a>
-          <a class="dropdown-item" href="/reservecars">Cars</a>
+
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -28,7 +28,7 @@
           <a class="dropdown-item" href="/flightcompany">flight</a>
           <a class="dropdown-item" href="/buscompany">Bus</a>
           <a class="dropdown-item" href="/hotelcompany">Hotels</a>
-          <a class="dropdown-item" href="/carscompany">Cars</a>
+
          
         </div>
       </li>
@@ -42,12 +42,11 @@
           <a class="dropdown-item" href="login.html">flight</a>
           <a class="dropdown-item" href="register.html">Bus</a>
           <a class="dropdown-item" href="forgot-password.html">Hotels</a>
-          <a class="dropdown-item" href="forgot-password.html">Cars</a>
           <div class="dropdown-divider"></div>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="/user">
           <i class="fas fa-fw fa-table"></i>
           <span>Users</span></a>
       </li>

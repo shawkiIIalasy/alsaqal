@@ -37,6 +37,7 @@ Route::resource('reserveflight','Admin\ReserveFlightController');
 Route::resource('hotelcompany','Admin\HotelCompanyController');
 Route::resource('reservehotel','Admin\ReserveHotelController');
 Route::resource('contact','Admin\ContactController');
+Route::resource('user','Admin\UserController');
 });
 
 

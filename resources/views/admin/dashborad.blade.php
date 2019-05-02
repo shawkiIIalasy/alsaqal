@@ -20,10 +20,10 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-comments"></i>
                 </div>
-                <div class="mr-5">26 New Messages!</div>
+                <div class="mr-5">Total Users</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+                <span class="float-left">{{$users}}</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
@@ -36,10 +36,10 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-list"></i>
                 </div>
-                <div class="mr-5">11 New Tasks!</div>
+                <div class="mr-5">Total Reservation</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+                <span class="float-left">{{$p1}}</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
@@ -52,10 +52,10 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
                 </div>
-                <div class="mr-5">123 New Orders!</div>
+                <div class="mr-5">Company</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+                <span class="float-left">{{$company}}</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
@@ -68,10 +68,10 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-life-ring"></i>
                 </div>
-                <div class="mr-5">13 New Tickets!</div>
+                <div class="mr-5">Total Message</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+                <span class="float-left">{{$message}}</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>

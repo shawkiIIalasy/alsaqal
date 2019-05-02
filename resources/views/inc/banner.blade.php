@@ -22,7 +22,6 @@
       <img src="images/flight.jpg" alt="flight">
       <div class="carousel-caption">
         <h3>Flight</h3>
-        <p>Thank you, !</p>
       </div>
     </div>
 
@@ -30,14 +29,14 @@
       <img src="images/car.jpg" alt="car">
       <div class="carousel-caption">
         <h3>Car</h3>
-        <p>We love the Big Apple!</p>
+
       </div>
     </div>
     <div class="item">
       <img src="images/bus.jpg" alt="bus">
       <div class="carousel-caption">
         <h3>Bus</h3>
-        <p>We love the Big Apple!</p>
+
       </div>
     </div>
   </div>

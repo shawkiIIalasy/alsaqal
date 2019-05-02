@@ -4,16 +4,16 @@
                     <div class="row row-bottom-padded-md">
                         <div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
                             <h3>About Alasaqal</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <p>A Jordanian tourist company that offers booking services for flights, hotels and transportation based in Jordan-Mafraq beside Al-Bayt University.</p>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-                            <h3>Top Flights Routes</h3>
+                            <h3>Trips</h3>
                             <ul>
-                                <li><a href="#">Manila flights</a></li>
-                                <li><a href="#">Dubai flights</a></li>
-                                <li><a href="#">Bangkok flights</a></li>
-                                <li><a href="#">Tokyo Flight</a></li>
-                                <li><a href="#">New York Flights</a></li>
+                                <li><a href="#"> flights</a></li>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Bus</a></li>
+                                <li><a href="#">Cars</a></li>
+                                
                             </ul>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
@@ -56,7 +56,7 @@
                         <div class="col-md-6 col-md-offset-3 text-center">
                             <p class="fh5co-social-icons">
                                 <a href="#"><i class="icon-twitter2"></i></a>
-                                <a href="#"><i class="icon-facebook2"></i></a>
+                                <a href="https://www.facebook.com/pages/category/Tour-Agency/%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%B3%D9%82%D8%A7%D9%84-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D9%87-%D9%88%D8%A7%D9%84%D8%B3%D9%81%D8%B1-%D9%88%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%AD%D9%86-617984268570715/"><i class="icon-facebook2"></i></a>
                                 <a href="#"><i class="icon-instagram"></i></a>
                                 <a href="#"><i class="icon-dribbble2"></i></a>
                                 <a href="#"><i class="icon-youtube"></i></a>

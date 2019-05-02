@@ -48,8 +48,9 @@ class flightController extends Controller
            $user1 = User::find(Auth::user()->id)->flightreservation;
             if(isset($user))
             {
+        
                 
-                if($user1->reserveflight_id==request('id'))
+                if(isset($user1)&&$user1->reserveflight_id==request('id'))
                 {
                     return redirect()->back()->with('danger', 'You Already Reserve This Trip');   
                 }else

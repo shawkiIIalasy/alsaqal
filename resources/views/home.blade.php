@@ -14,11 +14,11 @@
                     <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
                         <div href="#"><img src="/storage/images/{{$flighttop->image1}}" alt="" class="img-responsive">
                             <div class="desc">
-                                <span style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-100px; ">Flight</span>
+                                <div style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-60px;color: white">Flight</div>
                                 <h3>{{$flighttop->from}} To {{$flighttop->to}}</h3>
                                 <span class="price">{{$flighttop->price}}JD</span>
                                  <span >{{$flighttop->created_at->diffForHumans()}}</span>
-                                <a class="btn btn-primary btn-outline" href="#">Reserve Now <i class="icon-arrow-right22"></i></a>
+                                <a class="btn btn-primary btn-outline" href="/flight/{{$flighttop->id}}">Reserve Now <i class="icon-arrow-right22"></i></a>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                                 <span style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-100px; ">Flight</span>
                                 <h3>New York</h3>
                                 <span class="price">$1,000</span>
-                                <a class="btn btn-primary btn-outline" href="#">Reserve Now <i class="icon-arrow-right22"></i></a>
+                                <a class="btn btn-primary btn-outline" href="/flight">Reserve Now <i class="icon-arrow-right22"></i></a>
                             </div>
                         </div>
                     </div>
@@ -38,14 +38,14 @@
                     <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
                         <div href="#"><img src="/storage/images/{{$hoteltop->image1}}" alt="" class="img-responsive">
                             <div class="desc">
-                                <span style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-100px; ">Hotels</span>
+                                <div style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-60px;color: white">Hotels</div>
                                 <h3>{{$hoteltop->hotelcompany->name}}</h3>
                                 <span class="price">{{$hoteltop->price}}JD</span>
                                  <span >
                                     {{$hoteltop->hotelcompany->city}},{{$hoteltop->hotelcompany->country}}
                                    
                                     {{$hoteltop->created_at->diffForHumans()}}</span>
-                                <a class="btn btn-primary btn-outline" href="#">Reserve Now <i class="icon-arrow-right22"></i></a>
+                                <a class="btn btn-primary btn-outline" href="/hotel/{{$hoteltop->id}}">Reserve Now <i class="icon-arrow-right22"></i></a>
                             </div>
                         </div>
                     </div>
@@ -53,10 +53,10 @@
                         <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
                         <div href="#"><img src="images/place-1.jpg" alt="" class="img-responsive">
                             <div class="desc">
-                                <span style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-100px; ">Flight</span>
+                                <span style="background:#F78536;font-size: 22px;padding:10px;float:left;margin-top:-100px; ">Hotel</span>
                                 <h3>New York</h3>
                                 <span class="price">$1,000</span>
-                                <a class="btn btn-primary btn-outline" href="#">Reserve Now <i class="icon-arrow-right22"></i></a>
+                                <a class="btn btn-primary btn-outline" href="/hotel">Reserve Now <i class="icon-arrow-right22"></i></a>
                             </div>
                         </div>
                     </div>

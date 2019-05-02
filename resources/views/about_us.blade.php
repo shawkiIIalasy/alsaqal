@@ -19,7 +19,7 @@
 				</div>
 				<div class="col-md-3 profile text-center">
 					<div class="img-box">
-						<img src="images/Sh.jpg" class="img-responive">
+						<img src="images/h.jpg" class="img-responive">
 						<ul>
 							<a href="https://www.facebook.com/hamza.almashriqiy"><li><i class="fab fa-facebook"></i></li></a>
 							<a href=""><li><i class="fab fa-twitter"></i></li></a>
@@ -32,7 +32,7 @@
 				</div>
 					<div class="col-md-3 profile text-center">
 					<div class="img-box">
-						<img src="images/Sh.jpg" class="img-responive">
+						<img src="images/d.jpg" class="img-responive">
 						<ul>
 							<a href="https://web.facebook.com/shawki.alasy.75"><li><i class="fab fa-facebook"></i></li></a>
 							<a href=""><li><i class="fab fa-twitter"></i></li></a>

@@ -2,7 +2,7 @@
             <div id="footer">
                 <div class="container">
                     <div class="row row-bottom-padded-md">
-                        <div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
+                        <div class="col-md-6 col-sm-6 col-xs-12 fh5co-footer-link">
                             <h3>About Alasaqal</h3>
                             <p>A Jordanian tourist company that offers booking services for flights, hotels and transportation based in Jordan-Mafraq beside Al-Bayt University.</p>
                         </div>
@@ -11,46 +11,13 @@
                             <ul>
                                 <li><a href="#"> flights</a></li>
                                 <li><a href="#">Hotels</a></li>
-                                <li><a href="#">Bus</a></li>
                                 <li><a href="#">Cars</a></li>
                                 
                             </ul>
                         </div>
-                        <div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-                            <h3>Top Hotels</h3>
-                            <ul>
-                                <li><a href="#">Boracay Hotel</a></li>
-                                <li><a href="#">Dubai Hotel</a></li>
-                                <li><a href="#">Singapore Hotel</a></li>
-                                <li><a href="#">Manila Hotel</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-                            <h3>Interest</h3>
-                            <ul>
-                                <li><a href="#">Beaches</a></li>
-                                <li><a href="#">Family Travel</a></li>
-                                <li><a href="#">Budget Travel</a></li>
-                                <li><a href="#">Food &amp; Drink</a></li>
-                                <li><a href="#">Honeymoon and Romance</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-                            <h3>Best Places</h3>
-                            <ul>
-                                <li><a href="#">Boracay Beach</a></li>
-                                <li><a href="#">Dubai</a></li>
-                                <li><a href="#">Singapore</a></li>
-                                <li><a href="#">Hongkong</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-                            <h3>Affordable</h3>
-                            <ul>
-                                <li><a href="#">Food &amp; Drink</a></li>
-                                <li><a href="#">Fare Flights</a></li>
-                            </ul>
-                        </div>
+                       
+                       
+                        
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3 text-center">

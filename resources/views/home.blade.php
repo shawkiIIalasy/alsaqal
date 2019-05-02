@@ -86,12 +86,14 @@
 
                         <div class="feature-left">
                             <span class="icon">
-                                <i class="icon-hotairballoon"></i>
+                                <i class="fa fa-hotel"></i>
                             </span>
                             <div class="feature-copy">
-                                <h3>Family Travel</h3>
-                                <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                                <p><a href="#">Learn More</a></p>
+                                <h3>Hotel booking</h3>
+                                <p>
+Get your hotel bookings for any city in the world within minutes. Perfect for visa purposes. Group discounts available. We take care of cancellations at no cost to you.
+.</p>
+
                             </div>
                         </div>
 
@@ -100,70 +102,28 @@
                     <div class="col-md-4 animate-box">
                         <div class="feature-left">
                             <span class="icon">
-                                <i class="icon-search"></i>
+                                <i class="fa fa-lock"></i>
                             </span>
                             <div class="feature-copy">
-                                <h3>alSaqal Plans</h3>
-                                <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                                <p><a href="#">Learn More</a></p>
+                                <h3> Travel insurance </h3>
+                                <p>We provide best international travel medical insurance within minutes for any country visa. $50,000 policy coverage with $0 deductible.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 animate-box">
                         <div class="feature-left">
                             <span class="icon">
-                                <i class="icon-wallet"></i>
+                                <i class="icon icon-airplane"></i>
                             </span>
                             <div class="feature-copy">
-                                <h3>Honeymoon</h3>
-                                <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                                <p><a href="#">Learn More</a></p>
+                                <h3>Flight itinerary</h3>
+                                <p>
+We provide verifiable one way, round trip, and multi-city flight bookings for any country visa within minutes at an affordable price without you having to pay for actual tickets..</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 animate-box">
-
-                        <div class="feature-left">
-                            <span class="icon">
-                                <i class="icon-wine"></i>
-                            </span>
-                            <div class="feature-copy">
-                                <h3>Business Travel</h3>
-                                <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                                <p><a href="#">Learn More</a></p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4 animate-box">
-                        <div class="feature-left">
-                            <span class="icon">
-                                <i class="icon-genius"></i>
-                            </span>
-                            <div class="feature-copy">
-                                <h3>Solo Travel</h3>
-                                <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                                <p><a href="#">Learn More</a></p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 animate-box">
-                        <div class="feature-left">
-                            <span class="icon">
-                                <i class="icon-chat"></i>
-                            </span>
-                            <div class="feature-copy">
-                                <h3>Explorer</h3>
-                                <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                                <p><a href="#">Learn More</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
             </div>
         </div>
 

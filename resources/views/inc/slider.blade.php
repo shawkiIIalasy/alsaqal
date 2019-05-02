@@ -17,9 +17,7 @@
                                       <li role="presentation">
                                            <a href="#hotels" aria-controls="hotels" role="tab" data-toggle="tab">Hotels</a>
                                       </li>
-                                      <li role="presentation">
-                                           <a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">Cars</a>
-                                      </li>
+                                     
                                        <li role="presentation">
                                            <a href="#bus" aria-controls="bus" role="tab" data-toggle="tab">Bus</a>
                                       </li>

@@ -13,7 +13,6 @@
                                     <li><a href="/flight">flights</a></li>
                                     <li><a href="/hotel">Hotels</a></li>
                                     <li><a href="#">Bus</a></li>
-                                    <li><a href="#">Cars</a></li>
                                 </ul>
                             </li>
                             <li><a href="/about_us">About us</a></li>
